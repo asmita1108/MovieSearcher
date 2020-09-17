@@ -11,3 +11,11 @@
   text-align: center;
   color: blue;
 }
+
+@media only screen and (max-width: 200px) {
+  nav .brand-logo {
+    left: 0%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
