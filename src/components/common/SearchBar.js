@@ -4,7 +4,7 @@ const SearchBar = (props) => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col s4 offset-s4">
+        <div className="col s8 offset-l4  offset-m3 offset-s2 searchBar">
           <form action="" onSubmit={props.handleSubmit}>
             <div className="input-field">
               <input
