@@ -1,4 +1,3 @@
-import { data } from "jquery";
 import "../../src/App.css";
 import React, { Component } from "react";
 import NavBar from "./common/NavBar";
