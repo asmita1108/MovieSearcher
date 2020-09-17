@@ -8,8 +8,8 @@ const MovieInfo = (props) => {
         onClick={props.closeMovieInfo}
         style={{ cursor: "pointer", paddingTop: 50 }}
       >
-        <i className="fas fa-arrow-left"></i>
-        <span style={{ marginLeft: 10 }}>Go back</span>
+        <img src="arrow-left.png" alt="Icon" />
+        <span className="backtext">Go back</span>
       </div>
 
       <div className="row">

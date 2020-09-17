@@ -1,4 +1,5 @@
 import "../../src/App.css";
+import { themoviedbApiKey } from "../apiKeys";
 import React, { Component } from "react";
 import NavBar from "./common/NavBar";
 import SearchBar from "./common/SearchBar";
@@ -16,15 +17,13 @@ class App extends Component {
       currentPage: 1,
       currentMovie: null,
     };
-    //this.apiKey = process.env.REACT_APP_API;
-    this.apiKey = "645101f469947c0fc4c4c43f8cc53596";
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
 
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${this.state.searchTerm}`
+      `https://api.themoviedb.org/3/search/movie?api_key=${themoviedbApiKey}&query=${this.state.searchTerm}`
     )
       .then((data) => data.json())
       .then((data) => {
