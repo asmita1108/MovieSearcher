@@ -8,20 +8,20 @@ const Movie = (props) => {
           {props.image === null ? (
             <img
               src="Default.jpg"
-              alt="card-image"
+              alt="Poster"
               style={{ width: "100%", height: 260 }}
             />
           ) : (
             <img
               src={`https://image.tmdb.org/t/p/w185${props.image}`}
-              alt="card-image"
+              alt="Poster"
               style={{ width: "100%", height: 260 }}
             />
           )}
         </div>
         <div className="card-content">
           <p>
-            <a href="#" onClick={() => props.viewMovieInfo(props.movieId)}>
+            <a href="#/" onClick={() => props.viewMovieInfo(props.movieId)}>
               View Details
             </a>
           </p>

@@ -17,13 +17,13 @@ const MovieInfo = (props) => {
           {props.currentMovie.poster_path == null ? (
             <img
               src="Default.jpg"
-              alt="Card-image"
+              alt="Poster"
               style={{ width: "100%", height: 360 }}
             />
           ) : (
             <img
               src={`https://image.tmdb.org/t/p/w185${props.currentMovie.poster_path}`}
-              alt="Card-image"
+              alt="Poster"
               style={{ width: "100%", height: 360 }}
             />
           )}

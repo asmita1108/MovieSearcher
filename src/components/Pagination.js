@@ -11,7 +11,7 @@ const Pagination = (props) => {
         key={i}
         onClick={() => props.nextPage(i)}
       >
-        <a href="#">{i}</a>
+        <a href="#/">{i}</a>
       </li>
     );
   }
@@ -24,7 +24,7 @@ const Pagination = (props) => {
               className={`waves-effect`}
               onClick={() => props.nextPage(props.currentPage - 1)}
             >
-              <a href="#">Prev</a>
+              <a href="#/">Prev</a>
             </li>
           ) : null}
 
@@ -35,7 +35,7 @@ const Pagination = (props) => {
               className={`waves-effect`}
               onClick={() => props.nextPage(props.currentPage + 1)}
             >
-              <a href="#">Next</a>
+              <a href="#/">Next</a>
             </li>
           ) : null}
         </ul>

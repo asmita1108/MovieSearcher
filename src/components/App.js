@@ -54,7 +54,7 @@ class App extends Component {
   };
 
   viewMovieInfo = (id) => {
-    const filterMovie = this.state.movies.filter((movie) => movie.id == id);
+    const filterMovie = this.state.movies.filter((movie) => movie.id === id);
 
     const newCurrentMovie = filterMovie.length > 0 ? filterMovie[0] : null;
 

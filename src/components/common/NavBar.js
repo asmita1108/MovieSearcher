@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className="nav-wrapper container">
-        <a href="#" className="brand-logo">
+        <a href="#/" className="brand-logo">
           {" "}
           Movie Searcher
         </a>
